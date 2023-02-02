@@ -28,7 +28,7 @@ export const Bonus = () => {
                 "sourceQuery": 0
             })
         };
-        fetch('/cors-proxy/https://mp1.iprobonus.com/api/v3/clients/accesstoken', requestOptions)
+        fetch('/api/v3/clients/accesstoken', requestOptions)
             .then(response => response.json())
             .then(data => setToken(data.accessToken));
     }, []);
@@ -40,7 +40,7 @@ export const Bonus = () => {
                 'AccessKey': process.env.REACT_APP_AccessKey,
                 'AccessToken': token,
             }
-            fetch(`/cors-proxy/https://mp1.iprobonus.com/api/v3/ibonus/generalinfo/${token}`, { headers })
+            fetch(`/api/v3/ibonus/generalinfo/${token}`, { headers })
                 .then(response => response.json())
                 .then(data => setBonus({
                     currentQuantity: data.data.currentQuantity,

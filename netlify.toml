@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/cors-proxy/*"
-  to = ":splat"
+  from = "/api/*"
+  to = "https://mp1.iprobonus.com/:splat"
   status = 200
   force = true
