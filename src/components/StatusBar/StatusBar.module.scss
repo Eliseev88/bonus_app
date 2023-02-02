@@ -1,0 +1,71 @@
+   .statusBar {
+       height: 24px;
+       display: grid;
+       grid-template-columns: 33.5px 35px 1fr 25px 28px;
+       gap: 3px;
+       align-items: center;
+       list-style: none;
+       padding: 0 6px;
+       margin: 0;
+
+
+       font-family: 'Helvetica', sans-serif;
+       font-size: 12px;
+       line-height: 12px;
+
+       color: #000000;
+   }
+
+   li:nth-child(1) {
+       /* //statusBar__battery */
+       /* width: 33.5px; */
+       grid-column: 1/2;
+
+       display: flex;
+       gap: 1.5px;
+       align-items: center;
+
+
+   }
+
+   li:nth-child(1) .battery__dote {
+       width: 6px;
+       height: 6px;
+       box-sizing: border-box;
+       border-radius: 50%;
+       border: 1px solid #000;
+       background-color: none;
+       display: block;
+
+   }
+
+   li:nth-child(1) .battery__dote.active {
+
+       background-color: #000;
+
+   }
+
+   li:nth-child(2) {
+       justify-self: start;
+       grid-column: 2/3;
+
+   }
+
+   li:nth-child(3) {
+       /* justify-self: start; */
+       grid-column: 3/4;
+       justify-self: center;
+
+   }
+
+   li:nth-child(4) {
+       justify-self: end;
+       grid-column: 4/5;
+
+   }
+
+   li:nth-child(5) {
+       justify-self: end;
+       grid-column: 5/6;
+
+   }

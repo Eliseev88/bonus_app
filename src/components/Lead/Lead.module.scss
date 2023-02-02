@@ -1,0 +1,28 @@
+.lead {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 22px 0 26px;
+    margin-bottom: 72px;
+}
+
+.lead__logo {
+    margin: 0;
+    margin-bottom: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+
+
+    color: #000000;
+}
+
+.lead__info {
+    border: none;
+    background: none;
+}
